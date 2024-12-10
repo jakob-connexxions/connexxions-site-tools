@@ -22,6 +22,11 @@ Installation:
 
 == Changelog ==
 
+= 1.0.3 = 
+
+* Adding aspect-ratio managed parameter
+* Adding update via Git Updater
+
 = 1.0.2 =
 
 * Removing Post and Page Settings meta boxes (added by Pro)
