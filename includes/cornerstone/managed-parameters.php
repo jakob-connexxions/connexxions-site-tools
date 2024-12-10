@@ -4,6 +4,16 @@
 // =============================================================================
 function cx_add_managed_parameters() {
     if ( function_exists( 'cs_parameters_managed_register' ) ) {
+
+        // Aspect ratio control
+        cs_parameters_managed_register('aspect-ratio', [
+            'type' : 'dimension',
+            'isVar' : true,
+            'slider' : false,
+            'keywords' : [ 'auto', 'calc' ],
+            'initial' : 'calc(6/5)',
+            'units'    : [],
+        ]);
         
         // Simple boolean with tick and cross
         cs_parameters_managed_register('boolean', [
