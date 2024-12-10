@@ -1,0 +1,17 @@
+:root {
+  --heading-line-height: {{dc:theme:heading_line_height}};
+  --body-line-height: {{dc:theme:body_line_height}};
+  
+  --layout-site-width: {{dc:theme:x_layout_site_width}};
+  --layout-site-max-width: {{dc:theme:x_layout_site_max_width}};
+  --layout-calc-site-width: calc( min( var(--layout-site-width), var(--layout-site-max-width) ) );
+
+  --layout-gutter: calc( ( 100% - var(--layout-site-width) ) / 2 );
+
+  --default-duration: .3s;
+	--default-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+body {
+  line-height: var(--body-line-height);
+}
