@@ -3,7 +3,7 @@
     Plugin Name: Connexxions Site Tools
     Plugin URI: https://github.com/jakob-connexxions/connexxions-site-tools
     Description: Set of tools for Connexxions websites.
-    Version: 1.0.4
+    Version: 1.0.5
     Author: Jakob op den Brouw
     Author URI: https://connexxions.co.uk
     Text-domain: connexxions
