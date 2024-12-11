@@ -21,6 +21,11 @@ Installation:
 
 == Changelog ==
 
+= 1.0.5 =
+
+* Added Staging check with change to admin bar colour
+* Added Connexxions site settings options page ready for ACF
+
 = 1.0.4 =
 
 * Updated repository name to match GitHub repo name
