@@ -14,7 +14,7 @@
 // Define Path / URL Constants
 // ---------------------------
 
-define( 'CXX_PLUGIN_URL', plugins_url( __FILE__ ) );
+define( 'CXX_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
 define( 'CXX_IS_STAGING', str_contains( CXX_PLUGIN_URL, 'staging' ) );
 
