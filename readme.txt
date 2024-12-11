@@ -6,8 +6,7 @@ Tested up to: 6.7
 Stable tag: 6.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-GitHub Plugin URI: jakob-connexxions/Connexxions-Site-Tools
-GitHub Plugin URI: https://github.com/jakob-connexxions/Connexxions-Site-Tools
+GitHub Plugin URI: https://github.com/jakob-connexxions/connexxions-site-tools
 
 == Description ==
 
