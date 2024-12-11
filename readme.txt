@@ -21,6 +21,10 @@ Installation:
 
 == Changelog ==
 
+= 1.0.4 =
+
+* Updated repository name to match GitHub repo name
+
 = 1.0.3 = 
 
 * Adding aspect-ratio managed parameter
