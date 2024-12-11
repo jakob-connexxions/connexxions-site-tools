@@ -16,7 +16,7 @@
 
 define( 'CXX_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-$staging = ( defined( WP_ENVIRONMENT_TYPE ) ) ? WP_ENVIRONMENT_TYPE == 'staging' : str_contains( CXX_PLUGIN_URL, 'staging' ) || str_contains( CXX_PLUGIN_URL, 'odb.host' ) );
+$staging = ( defined( 'WP_ENVIRONMENT_TYPE' ) ) ? WP_ENVIRONMENT_TYPE == 'staging' : str_contains( CXX_PLUGIN_URL, 'staging' ) || str_contains( CXX_PLUGIN_URL, 'odb.host' ) );
 define( 'CXX_IS_STAGING', $staging );
 
 
