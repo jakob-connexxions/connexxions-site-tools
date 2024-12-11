@@ -8,7 +8,7 @@ add_action( 'acf/init', function() {
     	'position' => 1,
         'capability' => 'edit_theme_options',
     	'redirect' => false,
-    	'icon_url' => CXX_PLUGIN_URL , '/assets/cxx-dot.webp',
+    	'icon_url' => CXX_PLUGIN_URL . '/assets/cxx-dot.webp',
     	'autoload' => true,
     ) );
 } );
