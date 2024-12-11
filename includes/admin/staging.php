@@ -8,17 +8,17 @@
 // =============================================================================
 
 function cxx_staging_site() {
-    if ( !CXX_IS_STAGING )
-        return;
+    if ( 'staging' != WP_ENVIRONMENT_TYPE )
+	return;
 
-	// Enqueue styles for red admin bar
-	add_action( 'admin_enqueue_scripts', 'staging_adminbar_color_admin_enqueue_adminbar_color' );
-	add_action( 'wp_enqueue_scripts', 'staging_adminbar_color_front_enqueue_adminbar_color' );
+    // Enqueue styles for red admin bar
+    add_action( 'admin_enqueue_scripts', 'staging_adminbar_color_admin_enqueue_adminbar_color' );
+    add_action( 'wp_enqueue_scripts', 'staging_adminbar_color_front_enqueue_adminbar_color' );
 
     // Add "STAGING" notice to admin bar for all
     add_action( 'admin_bar_menu', function( $wp_admin_bar ) {
     
-        if ( !CXX_IS_STAGING ) {
+        if ( 'staging' != WP_ENVIRONMENT_TYPE ) {
             return;
         }
 
