@@ -1,12 +1,13 @@
 <?php
 /*
-Plugin Name: Connexxions Site Tools
-Description: Set of tools for Connexxions websites.
-Version: 1.0.3
-Author: Jakob op den Brouw
-Author URI: https://connexxions.co.uk
-GitHub Plugin URI: jakob-connexxions/Connexxions-Site-Tools
-GitHub Plugin URI: https://github.com/jakob-connexxions/Connexxions-Site-Tools
+    Plugin Name: Connexxions Site Tools
+    Plugin URI: https://github.com/jakob-connexxions/connexxions-site-tools
+    Description: Set of tools for Connexxions websites.
+    Version: 1.0.3
+    Author: Jakob op den Brouw
+    Author URI: https://connexxions.co.uk
+    Text-domain: connexxions
+    GitHub Plugin URI: https://github.com/jakob-connexxions/connexxions-site-tools
 */
 
 // Require other files
