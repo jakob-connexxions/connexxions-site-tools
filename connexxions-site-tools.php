@@ -22,6 +22,7 @@ define( 'CXX_IS_STAGING', str_contains( CXX_PLUGIN_URL, 'staging' ) );
 // Require other files
 // -------------------
 
+include( plugin_dir_path( __FILE__ ) . 'includes/admin/staging.php');
 include( plugin_dir_path( __FILE__ ) . 'includes/plugins/acfe.php');
 include( plugin_dir_path( __FILE__ ) . 'includes/cornerstone/conditionals.php');
 include( plugin_dir_path( __FILE__ ) . 'includes/cornerstone/connexxions-stack.php');
