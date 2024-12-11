@@ -10,8 +10,18 @@
     GitHub Plugin URI: https://github.com/jakob-connexxions/connexxions-site-tools
 */
 
+
+// Define Path / URL Constants
+// ---------------------------
+
+define( 'CXX_TEMPLATE_PATH', get_stylesheet_directory() );
+define( 'CXX_TEMPLATE_URL', get_stylesheet_directory_uri() );
+
+define( 'CXX_IS_STAGING', str_contains( CXX_TEMPLATE_URL, 'staging' ) );
+
+
 // Require other files
-// ============================================================================
+// -------------------
 
 include( plugin_dir_path( __FILE__ ) . 'includes/plugins/acfe.php');
 include( plugin_dir_path( __FILE__ ) . 'includes/cornerstone/conditionals.php');
