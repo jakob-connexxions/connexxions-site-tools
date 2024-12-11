@@ -14,10 +14,9 @@
 // Define Path / URL Constants
 // ---------------------------
 
-define( 'CXX_TEMPLATE_PATH', get_stylesheet_directory() );
-define( 'CXX_TEMPLATE_URL', get_stylesheet_directory_uri() );
+define( 'CXX_PLUGIN_URL', plugins_url( __FILE__ ) );
 
-define( 'CXX_IS_STAGING', str_contains( CXX_TEMPLATE_URL, 'staging' ) );
+define( 'CXX_IS_STAGING', str_contains( CXX_PLUGIN_URL, 'staging' ) );
 
 
 // Require other files
