@@ -8,7 +8,7 @@
 // =============================================================================
 
 function cxx_staging_site() {
-    if ( 'staging' != WP_ENVIRONMENT_TYPE )
+    if ( CXX_IS_STAGING )
 	return;
 
     // Enqueue styles for red admin bar
@@ -18,7 +18,7 @@ function cxx_staging_site() {
     // Add "STAGING" notice to admin bar for all
     add_action( 'admin_bar_menu', function( $wp_admin_bar ) {
     
-        if ( 'staging' != WP_ENVIRONMENT_TYPE ) {
+        if ( CXX_IS_STAGING ) {
             return;
         }
 
