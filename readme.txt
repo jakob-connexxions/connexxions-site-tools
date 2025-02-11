@@ -21,6 +21,10 @@ Installation:
 
 == Changelog ==
 
+= 1.0.7 =
+
+* Adding 'padding-group' Cornerstone managed parameter
+
 = 1.0.6 =
 
 * Updating --layout-gutter to calculate with --layout-site-calc-width rather than --layout-width, which is more accurate.
