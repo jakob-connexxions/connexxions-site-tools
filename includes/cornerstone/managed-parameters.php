@@ -5,6 +5,39 @@
 function cx_add_managed_parameters() {
     if ( function_exists( 'cs_parameters_managed_register' ) ) {
 
+        // Padding group
+        cs_parameters_managed_register('padding-group', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'top' => [
+                    'type' => 'padding',
+                    'initial' => '0px',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-top'
+                ],
+                'right' => [
+                    'type' => 'padding',
+                    'initial' => '0px',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-right'
+                ],
+                'bottom' => [
+                    'type' => 'padding',
+                    'initial' => '0px',
+                    'isVar' => true,
+                    'label' => 'Bttm',
+                    'labelBefore' => 'css:padding-bottom'
+                ],
+                'left' => [
+                    'type' => 'padding',
+                    'initial' => '0px',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-left'
+                ]
+            ]
+        ]);
+
         // Aspect ratio control
         cs_parameters_managed_register('aspect-ratio', [
             'type' => 'dimension',
