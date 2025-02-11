@@ -6,7 +6,7 @@
   --layout-site-max-width: {{dc:theme:x_layout_site_max_width}};
   --layout-calc-site-width: calc( min( var(--layout-site-width), var(--layout-site-max-width) ) );
 
-  --layout-gutter: calc( ( 100% - var(--layout-site-width) ) / 2 );
+  --layout-gutter: calc( ( 100% - var(--layout-calc-site-width) ) / 2 );
 
   --default-duration: .3s;
 	--default-timing-function: cubic-bezier(.4,0,.2,1);
