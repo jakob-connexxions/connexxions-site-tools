@@ -9,7 +9,7 @@
   --layout-gutter: calc( ( 100% - var(--layout-calc-site-width) ) / 2 );
 
   --default-duration: .3s;
-	--default-timing-function: cubic-bezier(.4,0,.2,1);
+  --default-timing-function: cubic-bezier(.4,0,.2,1);
 }
 
 body {
