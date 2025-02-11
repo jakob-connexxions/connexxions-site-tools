@@ -21,6 +21,10 @@ Installation:
 
 == Changelog ==
 
+= 1.0.6 =
+
+* Updating --layout-gutter to calculate with --layout-site-calc-width rather than --layout-width, which is more accurate.
+
 = 1.0.5 =
 
 * Added Staging check with change to admin bar colour
