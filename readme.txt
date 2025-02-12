@@ -21,6 +21,11 @@ Installation:
 
 == Changelog ==
 
+= 1.0.8 =
+
+* Adding 'margin-group' Cornerstone managed parameter
+* Add heading line height styling to h tags
+
 = 1.0.7 =
 
 * Adding 'padding-group' Cornerstone managed parameter

@@ -12,28 +12,61 @@ function cx_add_managed_parameters() {
             'params' => [
                 'top' => [
                     'type' => 'padding',
-                    'initial' => '0px',
+                    'initial' => '0em',
                     'isVar' => true,
                     'labelBefore' => 'css:padding-top'
                 ],
                 'right' => [
                     'type' => 'padding',
-                    'initial' => '0px',
+                    'initial' => '0em',
                     'isVar' => true,
                     'labelBefore' => 'css:padding-right'
                 ],
                 'bottom' => [
                     'type' => 'padding',
-                    'initial' => '0px',
+                    'initial' => '0em',
                     'isVar' => true,
                     'label' => 'Bttm',
                     'labelBefore' => 'css:padding-bottom'
                 ],
                 'left' => [
                     'type' => 'padding',
-                    'initial' => '0px',
+                    'initial' => '0em',
                     'isVar' => true,
                     'labelBefore' => 'css:padding-left'
+                ]
+            ]
+        ]);
+
+        // Margin group
+        cs_parameters_managed_register('margin-group', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'top' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-top'
+                ],
+                'right' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-right'
+                ],
+                'bottom' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'label' => 'Bttm',
+                    'labelBefore' => 'css:margin-bottom'
+                ],
+                'left' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-left'
                 ]
             ]
         ]);
