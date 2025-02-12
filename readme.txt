@@ -21,6 +21,10 @@ Installation:
 
 == Changelog ==
 
+= 1.0.8 =
+
+* Adding 'margin-group' Cornerstone managed parameter
+
 = 1.0.7 =
 
 * Adding 'padding-group' Cornerstone managed parameter
