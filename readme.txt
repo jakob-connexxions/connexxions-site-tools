@@ -21,6 +21,11 @@ Installation:
 
 == Changelog ==
 
+= 1.0.9 =
+
+* Adding scroll-effect Cornerstone managed parameter
+* Adding scroll-effect-disabled helper class for the scroll-effect managed param
+
 = 1.0.8 =
 
 * Adding 'margin-group' Cornerstone managed parameter

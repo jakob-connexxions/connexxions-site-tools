@@ -110,6 +110,23 @@ function cx_add_managed_parameters() {
                 [ 'value' => '0', 'icon' => 'times' ],
             ],
         ]);
+
+        // Scroll Effect control group
+        cs_parameters_managed_register('scroll-effect', ['type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'enabled' => [
+                    'type' => 'boolean',
+                    'initial' => 'true',
+                    'description' => '{{ p.scrollEffect.enabled == "false" ? "scroll-effect-disabled" : "" }}'
+                ],
+                'delay' => [
+                    'type' => 'time',
+                    'initial' => '0ms',
+                    'when' => 'eq(enabled, \'true\')'
+                ]
+            ]
+       ]);
     }
 }
 add_action( 'after_setup_theme', 'cx_add_managed_parameters');
