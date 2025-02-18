@@ -123,6 +123,7 @@ function cx_add_managed_parameters() {
                 'delay' => [
                     'type' => 'time',
                     'initial' => '0ms',
+                    'description' => '{{ p.scrollEffect.delay }}',
                     'when' => 'eq(enabled, \'true\')'
                 ]
             ]
