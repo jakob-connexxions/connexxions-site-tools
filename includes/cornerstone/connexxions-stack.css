@@ -20,3 +20,11 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   line-height: var(--heading-line-height);
 }
+
+// Scroll effects enable / disable feature for components
+:where(.scroll-effect-disabled) :is(.x-effect-exit, .x-effect-entering, .x-effect-exiting),
+.scroll-effect-disabled:is(.x-effect-exit, .x-effect-entering, .x-effect-exiting) {
+  opacity: 1 !important;
+  transform: translate(0px, 0px) !important;
+  pointer-events: auto !important;
+}
