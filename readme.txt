@@ -21,6 +21,10 @@ Installation:
 
 == Changelog ==
 
+= 1.0.10 =
+
+* Updating condition rule to check for new cs-content tag in HTML cornerstone pages
+
 = 1.0.9 =
 
 * Adding scroll-effect Cornerstone managed parameter
