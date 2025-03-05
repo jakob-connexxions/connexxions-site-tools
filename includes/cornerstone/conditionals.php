@@ -52,5 +52,7 @@ add_filter( 'cs_condition_rule_single_content_builder', 'cxx_condition_rule_cont
 // Positive check of presence of cs_content shortcode
 // Used to check if post was made with cornerstone
 function cxx_condition_rule_content_builder() {
-    return has_shortcode( get_the_content(), 'cs_content' );
+    $content = get_the_content();
+
+    return has_shortcode( $content, 'cs_content' ) || str_contains( $content, '<!-- cs-content -->' );
 }
