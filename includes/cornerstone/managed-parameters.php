@@ -38,6 +38,47 @@ function cx_add_managed_parameters() {
             ]
         ]);
 
+        // Padding group horizontal
+        cs_parameters_managed_register('padding-group-horizontal', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'right' => [
+                    'type' => 'padding',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-right'
+                ],
+                'left' => [
+                    'type' => 'padding',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-left'
+                ]
+            ]
+        ]);
+
+        // Padding group vertical
+        cs_parameters_managed_register('padding-group-vertical', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'top' => [
+                    'type' => 'padding',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:padding-top'
+                ],
+                'bottom' => [
+                    'type' => 'padding',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'label' => 'Bttm',
+                    'labelBefore' => 'css:padding-bottom'
+                ]
+            ]
+        ]);
+
         // Margin group
         cs_parameters_managed_register('margin-group', [
             'type' => 'group',
@@ -67,6 +108,47 @@ function cx_add_managed_parameters() {
                     'initial' => '0em',
                     'isVar' => true,
                     'labelBefore' => 'css:margin-left'
+                ]
+            ]
+        ]);
+
+        // Margin group horizontal
+        cs_parameters_managed_register('margin-group-horizontal', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'right' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-right'
+                ],
+                'left' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-left'
+                ]
+            ]
+        ]);
+
+        // Margin group vertical
+        cs_parameters_managed_register('margin-group-vertical', [
+            'type' => 'group',
+            'noPicker' => true,
+            'params' => [
+                'top' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'labelBefore' => 'css:margin-top'
+                ],
+                'bottom' => [
+                    'type' => 'margin',
+                    'initial' => '0em',
+                    'isVar' => true,
+                    'label' => 'Bttm',
+                    'labelBefore' => 'css:margin-bottom'
                 ]
             ]
         ]);
@@ -128,6 +210,18 @@ function cx_add_managed_parameters() {
                 ]
             ]
        ]);
+
+        // Headline tag selection
+        cs_parameters_managed_register('headline-tag', ['type' => 'choose',
+                                       'options' => [
+                                           [ 'value' => 'h1', 'icon' => 'h1' ],
+                                           [ 'value' => 'h2', 'icon' => 'h2' ],
+                                           [ 'value' => 'h3', 'icon' => 'h3' ],
+                                           [ 'value' => 'h4', 'icon' => 'h4' ],
+                                           [ 'value' => 'span', 'icon' => 'text' ]
+                                       ],
+                                       'initial' => 'h2'
+                                       ]);
     }
 }
 add_action( 'after_setup_theme', 'cx_add_managed_parameters');
