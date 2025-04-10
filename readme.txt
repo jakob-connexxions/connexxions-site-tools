@@ -21,6 +21,11 @@ Installation:
 
 == Changelog ==
 
+= 1.0.11 =
+
+* Adding padding and margin horizontal and vertical group managed parameters
+* Adding headline tag managed parameter
+
 = 1.0.10 =
 
 * Updating condition rule to check for new cs-content tag in HTML cornerstone pages
